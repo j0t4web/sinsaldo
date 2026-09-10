@@ -21,14 +21,15 @@
         .hero {
             position: relative;
             width: 100%;
-            max-height: 500px;
             overflow: hidden;
         }
-        
+
         .hero img {
             width: 100%;
             height: auto;
             display: block;
+            object-fit: contain;
+            object-position: center top;
         }
         
         .hero-overlay {
@@ -177,7 +178,7 @@
         
         @media (max-width: 600px) {
             .hero {
-                max-height: 300px;
+                /* sin max-height para que se vea completa */
             }
             
             .logo-container {
